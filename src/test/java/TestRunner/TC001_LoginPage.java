@@ -6,7 +6,8 @@ import org.testng.annotations.Test;
 
 public class TC001_LoginPage {
 	WebDriver driver;
-	@Test()
+	
+	@Test(priority=1)
 	public void OpeBrowser() {
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\mrubel\\Documents\\work\\git\\TeamProject\\chromedriver.exe");
@@ -16,6 +17,13 @@ public class TC001_LoginPage {
 	
 		
 	}
+	
+	@Test(priority=2)
+	public void CloseBrowser() {
+		driver.close();
+		System.out.println("Close browser successfully");
+	}
+	
 	
 
 }
