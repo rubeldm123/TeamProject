@@ -17,7 +17,7 @@ public class LoginStep {
 	WebDriver driver;
 	@Given("^Admin Navigate to HRM Login page$")
 	public void admin_Navigate_to_HRM_Login_page() throws Throwable {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\rubel\\Desktop\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\mrubel\\Documents\\work\\git\\TeamProject\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("http://opensource.demo.orangehrmlive.com/");
 	  
