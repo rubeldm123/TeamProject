@@ -5,7 +5,7 @@
   
   <classes>
   <class name="TestRunner.TC001_LoginPage"></class>
-   <class name="TestRunner.TC002_Logout"></class>
+  
   
   </classes>
   

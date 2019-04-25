@@ -1,15 +1,21 @@
 package TestRunner;
 
-import cucumber.api.CucumberOptions;
-import cucumber.api.testng.AbstractTestNGCucumberTests;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
-@CucumberOptions(
+public class TC001_LoginPage {
+	WebDriver driver;
+	@Test()
+	public void OpeBrowser() {
 		
-	features="Feature",	
-	glue="StepDef",
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\mrubel\\Documents\\work\\git\\TeamProject\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("https://opensource-demo.orangehrmlive.com/");
+		driver.manage().window().maximize();
 	
-	tags="@Login"
 		
-		)
+	}
+	
 
-public class TC001_LoginPage extends AbstractTestNGCucumberTests {}
+}

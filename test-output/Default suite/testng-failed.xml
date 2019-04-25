@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="TestRunner.TC002_Logout">
+      <class name="TestRunner.TC001_LoginPage">
         <methods>
           <include name="setUpClass"/>
-          <include name="feature" invocation-numbers="0"/>
+          <include name="feature"/>
           <include name="tearDownClass"/>
         </methods>
-      </class> <!-- TestRunner.TC002_Logout -->
+      </class> <!-- TestRunner.TC001_LoginPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
