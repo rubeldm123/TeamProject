@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test(failed)">
+  <test name="Test2(failed)">
+    <parameter name="browser" value="ie"/>
     <classes>
-      <class name="TestRunner.TC001_LoginPage">
+      <class name="testCases.TC001_Login">
         <methods>
-          <include name="setUpClass"/>
-          <include name="feature" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
+          <include name="loginTest"/>
+          <include name="teardown"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- TestRunner.TC001_LoginPage -->
+      </class> <!-- testCases.TC001_Login -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test2(failed) -->
+  <test name="Test3(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="testCases.TC001_Login">
+        <methods>
+          <include name="loginTest"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC001_Login -->
+    </classes>
+  </test> <!-- Test3(failed) -->
 </suite> <!-- Failed suite [Suite] -->

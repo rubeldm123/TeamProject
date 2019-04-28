@@ -2,16 +2,31 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12586" started-at="2019-04-25T21:15:47Z" finished-at="2019-04-25T21:16:00Z">
+  <suite name="Suite" duration-ms="11734" started-at="2019-04-28T15:41:39Z" finished-at="2019-04-28T15:41:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12586" started-at="2019-04-25T21:15:47Z" finished-at="2019-04-25T21:16:00Z">
-      <class name="TestRunner.TC001_LoginPage">
-        <test-method status="PASS" signature="OpeBrowser()[pri:0, instance:TestRunner.TC001_LoginPage@26653222]" name="OpeBrowser" duration-ms="12549" started-at="2019-04-25T16:15:47Z" finished-at="2019-04-25T16:16:00Z">
+    <test name="Test1" duration-ms="11734" started-at="2019-04-28T15:41:39Z" finished-at="2019-04-28T15:41:51Z">
+      <class name="testCases.TC001_Login">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testCases.TC001_Login@6a4f787b]" name="setup" is-config="true" duration-ms="7399" started-at="2019-04-28T10:41:39Z" finished-at="2019-04-28T10:41:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpeBrowser -->
-      </class> <!-- TestRunner.TC001_LoginPage -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:testCases.TC001_Login@6a4f787b]" name="loginTest" duration-ms="3736" started-at="2019-04-28T10:41:46Z" finished-at="2019-04-28T10:41:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.TC001_Login@6a4f787b]" name="teardown" is-config="true" duration-ms="563" started-at="2019-04-28T10:41:50Z" finished-at="2019-04-28T10:41:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testCases.TC001_Login -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
 </testng-results>
