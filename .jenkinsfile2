@@ -1,0 +1,27 @@
+pipeline
+{
+agent any
+
+stages
+{
+stage('ORG_V1_Freestyle_projec')
+{
+steps
+{
+bat "mvn clean"
+}
+}
+stage('ORG_V1_maven_project')
+{
+steps{
+echo 'deploying thr code'
+}
+}
+stage('ORG_V1_maven_project_Git')
+{
+steps{
+bat "mvn test"
+}
+}
+}
+}
